@@ -10,10 +10,15 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      name="user"
+    >
       <!-- ------------------------------The first section---------------------- -->
       <fieldset>
         <legend>Personal information</legend>
+
         <div class="section">
           <label for="surname">Surname:</label>
           <input
@@ -138,8 +143,8 @@
           <select
           multiple
           name="brand"
-          id="brand">
-
+          id="brand"
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -162,7 +167,6 @@
         <legend>Additional info:</legend>
 
         <div class="section">
-
           <label for="comment">Comments:</label>
           <textarea
             name="comment"
@@ -176,16 +180,19 @@
         <div class="section">
           <label for="drop-down">Would you recommend us?</label>
           <select name="drop-down" id="drop-down">
-            <option value="yes">Yes
+            <option value="yes">
+              Yes
             </option>
-            <option value="no">No
+            <option value="no">
+              No
             </option>
           </select>
-
         </div>
+
       </fieldset>
 
       <button type="submit" >Submit</button>
+
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
